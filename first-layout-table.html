@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>first-layout-table</title>
+        <style>
+            body{
+                margin: 0px;
+            }
+            table{
+                border-collapse: collapse; 
+                border-spacing: 0px;
+                font-family: Arial;
+            }
+            .header{
+                font-weight: normal;
+                text-align: center;
+                padding: 0px;
+                margin: 10px;
+            }
+            th, .footer{
+                color: blue;
+                text-transform: uppercase;
+                background-color: lightblue;
+                padding: 0px;
+                
+            }
+            .menu{
+                vertical-align: top;
+                padding: 30px 0px;
+                width: 250px;
+                background-color: rgb(240, 230, 140);
+            }
+            h3{
+                font-weight: normal;
+                text-align: center;
+            }
+            .menu strong{
+                padding-left: 20px;
+            }
+            .main{
+                background: url(images/ball.png) repeat-y right;
+                padding: 0px 20px 20px;
+            }
+            img{
+                float: left;
+                padding: 0px 20px 20px 0px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th colspan="2">
+                    <h2 class="header">Привет участникам соревнований!</h2>
+                </th>
+            </tr>
+            <tr>
+                <td class="menu">
+                    <strong>Виды спорта:</strong>
+                    <ul>
+                        <li><a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт" target="_blank" title="конькобежный спорт">конькобежный спорт</a></li>
+                        <li><a href="https://www.championat.com/biathlon/" target="_blank" title="биатлон">биатлон</a></li>
+                        <li><a href="https://www.championat.com/news/football/1.html" target="_blank" title="футбол">футбол</a></li>
+                        <li><a href="http://archeryclub.by" target="_blank" title="стрельба из лука">стрельба из лука</a></li>
+                        <li><a href="https://www.wikiwand.com/ru/Прыжок_в_длину" target="_blank" title="прыжки в длину">прыжки в длину</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki" target="_blank" title="прыжки в высоту">прыжки в высоту</a></li>
+                        <li><a href="https://by.tribuna.com/figure-skating/" title="фигурное катание">фигурное катание</a></li>
+                        <li><a href="http://belarusaquatics.by/sinhronnoe-plavanie-contacts" target="_blank" title="синхронное плавание">синхронное плавание</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Шахматы" target="_blank" title="шахматы">шахматы</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Шашки" target="_blank" title="шашки">шашки</a></li>
+                    </ul>
+                </td>
+                <td class="main">
+                    <h3><strong>ФУТБОЛ</strong></h3>
+                    <img src="images/football.png">
+                    <p>
+                        Футбол— командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее количество раз, чем команда соперника. 
+                    </p>
+                    <p>Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов. Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы очень часто формулировались в общих чертах, которые позволяют упростить их применения в зависимости от характера игры. </p>
+               </td>
+            </tr>
+            <tr> 
+                <td colspan="2" class="footer"><h3>Главное не победа, а участие!</h3></td>
+            </tr>
+        </table>
+    </body>
+</html>

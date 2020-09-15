@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>color-blocks-table</title>
+        <style>
+            table{
+                border-collapse: collapse; 
+                border-spacing: 0px;
+            }
+            body{
+                margin: 0px; 
+            }
+            th{
+                width: 100vw;
+                height: 25vh;
+                padding: 0px;
+                background-color: yellow;
+            }
+            .duo-left{
+                width: 50vw;
+                height: 25vh;
+                background-color: green;
+            }
+            .duo-right{
+                width: 50vw;
+                height: 25vh;
+                background-color: blue;
+            }
+            .trio-left{
+                width: 32vw;
+                height: 25vh;
+                background-color: orange;
+            }
+            .trio-central{
+                width: 34vw;
+                height: 25vh;
+                background-color: purple;
+            }
+            .trio-right{
+                width: 32vw;
+                height: 25vh;
+                background-color: red;
+            }
+            .bottom{
+                height: 25vh;
+                padding: 0px;
+                background-color: cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th colspan="4"></th>
+            </tr>
+            <tr>
+                <td colspan="2" class="duo-left"></td>
+                <td colspan="2" class="duo-right"></td>
+            </tr>
+            <tr>
+                <td class="trio-left"></td>
+                <td colspan="2" class="trio-central"></td>
+                <td class="trio-right"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="bottom"></td>
+            </tr>
+        </table>
+    </body>
+</html>

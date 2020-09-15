@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>chess</title>
+        <style>
+            body{
+                background-color: cyan;
+                } 
+            table{
+                margin: auto;
+                border-collapse: collapse; 
+                border-spacing: 0px;
+            }
+            caption{
+                text-align: center; 
+                font-weight: bold; 
+                font-size: 30px;
+                padding: 24px
+            }
+            .name-place{
+                background-color: white;
+                border-style: solid hidden;
+                width: 48px;
+                height: 24px;
+                font-size: 15px;
+                font-weight: bold; 
+                text-align: center;
+            }
+            .number-place{
+                background-color: white;
+                border-style: hidden solid ;
+                width: 12px;
+                height: 48px;
+                font-size: 15px;
+                font-weight: bold;
+                text-align: center;
+            }
+            .corner-left{
+                border-style: solid;
+                width: 24px;
+                height: 24px;
+            }
+            .corner-right{
+                border-style: solid;
+                width: 24px;
+                height: 24px;
+            }
+           
+            
+            .piece{
+                background: url(images/chess.png);
+                width: 48px;
+                height: 48px;
+            }
+            .piece-black-pawn{
+                background-position: -240px 0px;
+                background-repeat: no-repeat;
+            }
+            .piece-white-pawn{
+                background-position: -240px -48px;
+                background-repeat: no-repeat;
+            }
+            .piece-white-knight{
+                background-position: -192px -48px;
+            } 
+            .piece-black-knight{
+                background-position: -192px 0px;
+            } 
+            .piece-black-bishop{
+                background-position: -144px 0px;
+            }
+            .piece-white-bishop{
+                background-position: -144px -48px;
+            }
+            .piece-white-rook{
+                background-position: -96px -48px;
+            }
+            .piece-black-rook{
+                background-position: -96px 0px;
+            }
+            .piece-black-queen{
+                background-position: -48px 0px;
+            }
+            .piece-white-queen{
+                background-position: -48px -48px;
+            }
+            .piece-white-king{
+                background-position: 0px -48px;
+            }
+            .piece-black-king{
+                background-position: 0px 0px;
+            }
+            .white-place{
+                width: 48px;
+                height: 48px;
+                background-color: white;
+            }
+            .black-place{
+                width: 48px;
+                height: 48px;
+                background-color: rgba(0,0,0,0.5);
+            }
+        </style>
+        <body>
+            <table>
+                <caption>Шахматы</caption>
+                <tr>
+                        <th class="name-place corner-left"></th>
+                        <th class="name-place">a</th>
+                        <th class="name-place">b</th>
+                        <th class="name-place">c</th>
+                        <th class="name-place">d</th>
+                        <th class="name-place">e</th>
+                        <th class="name-place">f</th>
+                        <th class="name-place">g</th>
+                        <th class="name-place">h</th>
+                        <th class="name-place corner-right"></th>
+                </tr>
+                <tr>
+                    <td class="number-place">8</td>
+                    <td class="white-place piece piece-black-rook"></td>
+                    <td class="black-place piece piece-black-knight"></td>
+                    <td class="white-place piece piece-black-bishop"></td>
+                    <td class="black-place piece piece-black-queen"></td>
+                    <td class="white-place piece piece-black-king"></td>
+                    <td class="black-place piece piece-black-bishop"></td>
+                    <td class="white-place piece piece-black-knight"></td>
+                    <td class="black-place piece piece-black-rook"></td>
+                    <td class="number-place">8</td>
+                </tr>
+                <tr>
+                    <td class="number-place">7</td>
+                    <td class="black-place piece piece-black-pawn"></td>
+                    <td class="white-place piece piece-black-pawn"></td>
+                    <td class="black-place piece piece-black-pawn"></td>
+                    <td class="white-place piece piece-black-pawn"></td>
+                    <td class="black-place piece piece-black-pawn"></td>
+                    <td class="white-place piece piece-black-pawn"></td>
+                    <td class="black-place piece piece-black-pawn"></td>
+                    <td class="white-place piece piece-black-pawn"></td>
+                    <td class="number-place">7</td>
+                </tr> <tr>
+                    <td class="number-place">6</td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="number-place">6</td>
+                </tr>
+                <tr>
+                    <td class="number-place">5</td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="number-place">5</td>
+                </tr> <tr>
+                    <td class="number-place">4</td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="number-place">4</td>
+                </tr>
+                <tr>
+                    <td class="number-place">3</td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="black-place"></td>
+                    <td class="white-place"></td>
+                    <td class="number-place">3</td>
+                </tr> <tr>
+                    <td class="number-place">2</td>
+                    <td class="white-place piece piece-white-pawn"></td>
+                    <td class="black-place piece piece-white-pawn"></td>
+                    <td class="white-place piece piece-white-pawn"></td>
+                    <td class="black-place piece piece-white-pawn"></td>
+                    <td class="white-place piece piece-white-pawn"></td>
+                    <td class="black-place piece piece-white-pawn"></td>
+                    <td class="white-place piece piece-white-pawn"></td>
+                    <td class="black-place piece piece-white-pawn"></td>
+                    <td class="number-place">2</td>
+                </tr>
+                <tr>
+                    <td class="number-place">1</td>
+                    <td class="black-place piece piece-white-rook"></td>
+                    <td class="white-place piece piece-white-knight"></td>
+                    <td class="black-place piece piece-white-bishop"></td>
+                    <td class="white-place piece piece-white-queen"></td>
+                    <td class="black-place piece piece-white-king"></td>
+                    <td class="white-place piece piece-white-bishop"></td>
+                    <td class="black-place piece piece-white-knight"></td>
+                    <td class="white-place piece piece-white-rook"></td>
+                    <td class="number-place">1</td>
+                </tr>
+                <tr>
+                    <td class="name-place corner-left"></td>
+                    <td class="name-place">a</td>
+                    <td class="name-place">b</td>
+                    <td class="name-place">c</td>
+                    <td class="name-place">d</td>
+                    <td class="name-place">e</td>
+                    <td class="name-place">f</td>
+                    <td class="name-place">g</td>
+                    <td class="name-place">h</td>
+                    <td class="name-place corner-right"></td>
+            </tr>
+            </table>
+        </body>
+    </head>
+</html>

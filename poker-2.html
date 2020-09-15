@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>poker-2</title>
+        <style>
+            body{
+                background-color: rgb(0,255,255);
+            }
+                .bg-line-right{
+                background: url(images/linr_rignt.png) repeat-y right;
+                }
+                .bg-line-left{
+                    background: url(images/line_left.png) repeat-y left;
+                }
+                .bg-top{
+                    background: url(images/top.png) repeat-x;
+                }
+                .bg-bottom{
+                    background: url(images/bb.png) repeat-x bottom;
+                }
+                .bg-bottom-right{
+                    background: url(images/bottom_right.png) no-repeat  bottom right;
+                }
+                .bg-left{
+                    background: url(images/botton_left.png) no-repeat bottom left;
+                }
+                .bg-top-right{
+                    background: url(images/top_right.png) no-repeat top right;
+                }
+                .bg-top-left{
+                    background: url(images/corner_left_top.png) no-repeat top left;
+                }
+                .content{
+                    padding: 75px;
+                }
+                .all-cards{
+                    padding: 20px; border-style: solid; border-color: green;
+                }
+                .cards-img{
+                    background-image: url(images/cards.png); background-repeat: no-repeat; width: 140px; height: 190px; display: inline-block;
+                }
+                /*В следующих классах используется нумерация 1,2,3,4,5 так как позиция карт в комбинациях покера важна, 
+                и даже если комбинация изменится, у нее все равно будут 1,2,3,4,5 позиции*/
+                .card-1
+                {
+                    background-position: 0px -2330px; 
+                }
+                .card-2
+                {
+                    background-position: -145px -2135px; 
+                }
+                .card-3
+                {
+                   background-position: -290px -1940px;   
+                }
+                .card-4
+                {
+                    background-position: -435px -1745px;
+                }
+                .card-5
+                {
+                    background-position: -145px -1550px;
+                }
+        </style>
+    </head>
+    <body>
+        <div style="background-color: white;">
+            <div class="bg-line-right">
+            <div class="bg-line-left">
+                    <div class="bg-top">
+                    <div  class="bg-bottom">
+                        <div class="bg-bottom-right">
+                        <div class="bg-left">
+                            <div class="bg-top-right">
+                            <div class="bg-top-left">
+            <div class="content">
+                <h1>Покер</h1>
+                <p><strong>По́кер</strong> (англ. poker) — карточная игра, цель которой — выиграть ставки, собрав как можно более высокую покерную комбинацию, используя 4 (старый классический вариант), или 5 карт, или вынудив всех соперников прекратить участвовать в игре. Игра идёт с полностью или частично закрытыми картами. Конкретные правила могут варьироваться в зависимости от разновидности покера. Обобщающими элементами всех разновидностей покера являются комбинации и наличие торговли в процессе игры.
+                </p>
+                <p>
+                    Ввиду того, что игрок не знает карты своих противников, покер является игрой с неполной информацией, как и многие другие карточные игры, в отличие от, например, шахмат, в которых оба игрока видят положение всех фигур на доске.   
+                </p>
+                <h2>Комбинация в покере — стрит</h2>
+                <div class="all-cards">
+                    <div class="card-1 cards-img"></div> 
+                    <div class="card-2 cards-img"></div> 
+                    <div class="card-3 cards-img"></div> 
+                    <div class="card-4 cards-img"></div> 
+                    <div class="card-5 cards-img"></div> 
+                </div>
+        </div></div></div></div></div></div>
+     </body>
+</html>
